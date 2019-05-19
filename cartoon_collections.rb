@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(calls)
   check = []
-  calls.each { |call| check << call.length > 4 }
+  calls.each { |call| check << (call.length > 4) }
   if check.include?(true)
     true
   else
